@@ -10,20 +10,20 @@
 tool.minDistance = 10;
 tool.maxDistance = 45;
 
-var path;
+var paintBrush;
 
 function onMouseDown(event) {
-	path = new Path();
+	paintBrush = new Path();
 
-	// path.fillColor = {
+	// paintBrush.fillColor = {
 	// hue: Math.random() * 360,
 	// saturation: 1,
 	// brightness: 1
 	// };
 
-	path.fillColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+	paintBrush.fillColor = '#'+Math.floor(Math.random()*16777215).toString(16);
 
-	path.add(event.point);
+	paintBrush.add(event.point);
 
 
 }
@@ -36,15 +36,15 @@ function onMouseDrag(event) {
 	var up = event.middlePoint + width;
 	var down = event.middlePoint - width;
 
-	path.add(up);
-	path.insert(0, down);
-	path.smooth();
+	paintBrush.add(up);
+	paintBrush.insert(0, down);
+	paintBrush.smooth();
 }
 
 function onMouseUp(event) {
-	path.add(event.point);
-	path.closed = true;
-	path.smooth();
+	paintBrush.add(event.point);
+	paintBrush.closed = true;
+	paintBrush.smooth();
 
 }
 
