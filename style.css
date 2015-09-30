@@ -9,7 +9,6 @@
      border-style: groove;
      margin-right: 6%;
      margin-left: 4%;
-     margin-top: 2%;
      margin-bottom: 8%;
      background: white;
 
@@ -19,4 +18,9 @@ body {
 	
 	background: grey;
 	
+}
+
+.text {
+     font-family: 'PT Sans', sans-serif;
+     color: white;
 }

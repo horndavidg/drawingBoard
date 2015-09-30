@@ -5,6 +5,9 @@
 <!-- Load the Paper.js library -->
 <script type="text/javascript" src="paperjs/docs/assets/js/paper.js"></script>
 <!-- Define inlined PaperScript associate it with myCanvas -->
+
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
 <script type="text/paperscript" canvas="myCanvas">
 
 tool.minDistance = 10;
@@ -51,6 +54,7 @@ function onMouseUp(event) {
 </script>
 </head>
 <body>
+<p class="text">Simply click and hold on the canvas, then move your mouse like a brush! (re-click to change colors)</p>
 	<canvas id="myCanvas" resize></canvas>
 </body>
 </html>
